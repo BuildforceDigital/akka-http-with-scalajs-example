@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+    <meta charset=UTF-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name=description
+          content="Akka HTTP RESTless Web App with react, bootstrap as a sbt-web-scalajs project with webjars">
+    <meta name=author content="FvdB">
+    <meta name=generator content="Scala.js Scalatags">
+    <meta name=versionId content="2017-01">
+
+    <title>RESTless webapp Akka HTTP, react</title>
+    <link rel=apple-touch-icon href="/img/apple-touch-icon.png">
+    <!-- Place favicon.ico in the img directory -->
+    <link rel=icon type="image/x-icon" href="/img/favicon.ico">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Custom styles for this page -->
+    <link rel=stylesheet media="screen" href="/css/main.css">
+    <link rel="stylesheet" media="screen" href="/css/todo.css">
+
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">
+    upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img src="/img/akka512.png" width="42" height="42" title="Akka HTTP">
+            <img src="/img/logo-React.svg" width="42" height="42" title=" Facebook's React">
+            <img src="/img/api-graphic.jpg" width="42" height="42" title="RESTless web service">
+            <img src="/img/logo-Bootstrap.svg" width="42" height="42" title="Twitter Bootstrap">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://www.scala-lang.org/" target="_blank">Scala</a></li>
+                <li><a href="http://www.scala-js.org/" target="_blank">Scala.js</a></li>
+                <li><a href="http://doc.akka.io/docs/akka-http/10.0.1/scala/http/introduction.html" target="_blank">Akka
+                    HTTP</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" action="https://github.com/search" method="GET" target="_blank">
+                <input type="hidden" name="nwo" value="amsterdam-scala/akka-http-with-scalajs-example"/>
+                <input type="hidden" name="search_target" value="repository"/>
+                <input type="hidden" name="ref" value="cmdform"/>
+                <input type="text" name="q" class="form-control" placeholder="Search GitHub…"/>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Hello!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/en/todos"><strike>Reactive</strike> TodoMVC<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/en/hangman"><strike>Reactive</strike> Hangman</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/en/upload">HTML5 File Upload</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/en/chat">Server Push Chat</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+            <h1>to-do's</h1>
+
+            <section class="row text-center placeholders">
+
+            <div id="root">
+            </div>
+            </section>
+        </main>
+    </div>
+</div>
+
+
+<!-- Include JavaScript dependencies e.g. jQuery.js -->
+<script type="text/javascript" src="/js/main-jsdeps.js"></script>
+<!-- Include Scala.js compiled code -->
+<script type="text/javascript" src="/js/main-fastopt.js"></script>
+<!-- Run JSApp -->
+<script type="text/javascript" > example.TodoJS().main(); </script>
+</body>
+</html>

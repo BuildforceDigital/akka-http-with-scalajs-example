@@ -1,0 +1,52 @@
+# IntelliJ
+.idea/
+*.iws
+/classes/
+/out/
+
+# Log files
+*.log
+
+# Mac
+.DS_Store
+
+# Miscellaneous
+/.metadata/
+/.recommenders/
+/RemoteSystemsTempFiles/
+javascript/node_modules/
+
+# sbt specific
+**/target/
+.cache
+.lib/
+/RUNNING_PID
+dist/*
+lib_managed/
+project/**/project
+project/activator-sbt*
+src_managed/
+
+# Scala worksheets (Eclipse or IntelliJ)
+*.sc
+
+# Eclipse specific
+.cache-main
+.cache-tests
+.classpath
+.project
+.scala_dependencies
+.settings
+.worksheet
+bin/
+
+# ScalaTest
+exportToHTML
+
+# Windows
+desktop.ini
+thumbs.db
+
+# hidden cross project folders
+**/shared/.js
+**/shared/.jvm
